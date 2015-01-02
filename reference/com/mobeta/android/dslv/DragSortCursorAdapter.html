@@ -1,0 +1,3067 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Javadoc API documentation for drag-sort-listview." />
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
+<title>
+
+  DragSortCursorAdapter
+
+
+| drag-sort-listview
+
+</title>
+<link href="../../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../", "../../../../../assets/");
+</script>
+<script src="../../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../assets/navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="">
+
+<div id="header">
+    <div id="headerLeft">
+    
+      <span id="masthead-title">drag-sort-listview</span>
+    
+    </div>
+    <div id="headerRight">
+      
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+      
+    </div>
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../packages.html"  >Package Index</a> | 
+                <a href="../../../../classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="selected api apilevel-">
+  <a href="../../../../com/mobeta/android/dslv/package-summary.html">com.mobeta.android.dslv</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortListView.DragListener.html">DragSortListView.DragListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortListView.DragScrollProfile.html">DragSortListView.DragScrollProfile</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortListView.DragSortListener.html">DragSortListView.DragSortListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortListView.DropListener.html">DragSortListView.DropListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortListView.FloatViewManager.html">DragSortListView.FloatViewManager</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortListView.RemoveListener.html">DragSortListView.RemoveListener</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/SimpleDragSortCursorAdapter.CursorToStringConverter.html">SimpleDragSortCursorAdapter.CursorToStringConverter</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/SimpleDragSortCursorAdapter.ViewBinder.html">SimpleDragSortCursorAdapter.ViewBinder</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/BuildConfig.html">BuildConfig</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortController.html">DragSortController</a></li>
+          <li class="selected api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html">DragSortCursorAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortItemView.html">DragSortItemView</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/DragSortListView.html">DragSortListView</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/R.html">R</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/R.attr.html">R.attr</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/R.id.html">R.id</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/R.styleable.html">R.styleable</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/ResourceDragSortCursorAdapter.html">ResourceDragSortCursorAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/SimpleDragSortCursorAdapter.html">SimpleDragSortCursorAdapter</a></li>
+          <li class="api apilevel-"><a href="../../../../com/mobeta/android/dslv/SimpleFloatViewManager.html">SimpleFloatViewManager</a></li>
+      </ul>
+    </li>
+              
+              
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../packages.html"  >Package Index</a> | 
+            <a href="../../../../classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+   
+  
+  
+   
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+   
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+
+Summary:
+
+
+
+
+
+  <a href="#constants">Constants</a>
+  
+
+
+  &#124; <a href="#inhconstants">Inherited Constants</a>
+  
+
+
+
+  &#124; <a href="#inhfields">Inherited Fields</a>
+  
+
+
+  &#124; <a href="#pubctors">Ctors</a>
+  
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+     
+    abstract
+    class
+<h1>DragSortCursorAdapter</h1>
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+    extends CursorAdapter<br/>
+  
+  
+  
+
+  
+  
+      implements 
+      
+        <a href="../../../../com/mobeta/android/dslv/DragSortListView.DragSortListener.html">DragSortListView.DragSortListener</a> 
+      
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="4" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/android/widget/BaseAdapter.html">android.widget.BaseAdapter</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell">android.support.v4.widget.CursorAdapter</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.mobeta.android.dslv.DragSortCursorAdapter</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+<table class="jd-sumtable jd-sumtable-subclasses"><tr><td colspan="12" style="border:none;margin:0;padding:0;">
+
+  <a href="#" onclick="return toggleInherited(this, null)" id="subclasses-direct" class="jd-expando-trigger closed"
+          ><img id="subclasses-direct-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>Known Direct Subclasses
+
+  <div id="subclasses-direct">
+      <div id="subclasses-direct-list"
+              class="jd-inheritedlinks"
+              
+              >
+          
+            
+              <a href="../../../../com/mobeta/android/dslv/ResourceDragSortCursorAdapter.html">ResourceDragSortCursorAdapter</a>
+            
+          
+      </div>
+      <div id="subclasses-direct-summary"
+              style="display: none;"
+              >
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../com/mobeta/android/dslv/ResourceDragSortCursorAdapter.html">ResourceDragSortCursorAdapter</a></td>
+              <td class="jd-descrcol" width="100%">Static library support version of the framework's android.widget.ResourceCursorAdapter.&nbsp;</td>
+          </tr>
+  </table>
+      </div>
+  </div>
+</td></tr></table>
+
+
+
+<table class="jd-sumtable jd-sumtable-subclasses"><tr><td colspan="12" style="border:none;margin:0;padding:0;">
+
+  <a href="#" onclick="return toggleInherited(this, null)" id="subclasses-indirect" class="jd-expando-trigger closed"
+          ><img id="subclasses-indirect-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>Known Indirect Subclasses
+
+  <div id="subclasses-indirect">
+      <div id="subclasses-indirect-list"
+              class="jd-inheritedlinks"
+              
+              >
+          
+            
+              <a href="../../../../com/mobeta/android/dslv/SimpleDragSortCursorAdapter.html">SimpleDragSortCursorAdapter</a>
+            
+          
+      </div>
+      <div id="subclasses-indirect-summary"
+              style="display: none;"
+              >
+  <table class="jd-sumtable-expando">
+        <tr class="alt-color api apilevel-" >
+              <td class="jd-linkcol"><a href="../../../../com/mobeta/android/dslv/SimpleDragSortCursorAdapter.html">SimpleDragSortCursorAdapter</a></td>
+              <td class="jd-descrcol" width="100%">An easy adapter to map columns from a cursor to TextViews or ImageViews
+ defined in an XML file.&nbsp;</td>
+          </tr>
+  </table>
+      </div>
+  </div>
+</td></tr></table>
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p>A subclass of android.widget.CursorAdapter that provides
+ reordering of the elements in the Cursor based on completed
+ drag-sort operations. The reordering is a simple mapping of
+ list positions into Cursor positions (the Cursor is unchanged).
+ To persist changes made by drag-sorts, one can retrieve the
+ mapping with the <code><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#getCursorPositions()">getCursorPositions()</a></code> method, which
+ returns the reordered list of Cursor positions.
+
+ An instance of this class is passed
+ to <code><a href="../../../../com/mobeta/android/dslv/DragSortListView.html#setAdapter(android.widget.ListAdapter)">setAdapter(ListAdapter)</a></code> and, since
+ this class implements the <code><a href="../../../../com/mobeta/android/dslv/DragSortListView.DragSortListener.html">DragSortListView.DragSortListener</a></code>
+ interface, it is automatically set as the DragSortListener for
+ the DragSortListView instance.
+</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
+
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#REMOVED">REMOVED</a></td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+
+</table>
+
+
+
+
+
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="inhconstants" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Constants</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-constants-android.support.v4.widget.CursorAdapter" class="jd-expando-trigger closed"
+          ><img id="inherited-constants-android.support.v4.widget.CursorAdapter-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>From class
+android.support.v4.widget.CursorAdapter
+<div id="inherited-constants-android.support.v4.widget.CursorAdapter">
+  <div id="inherited-constants-android.support.v4.widget.CursorAdapter-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-constants-android.support.v4.widget.CursorAdapter-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">FLAG_AUTO_REQUERY</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">FLAG_REGISTER_CONTENT_OBSERVER</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-constants-android.widget.Adapter" class="jd-expando-trigger closed"
+          ><img id="inherited-constants-android.widget.Adapter-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>From interface
+android.widget.Adapter
+<div id="inherited-constants-android.widget.Adapter">
+  <div id="inherited-constants-android.widget.Adapter-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-constants-android.widget.Adapter-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">IGNORE_ITEM_VIEW_TYPE</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol">NO_SELECTION</td>
+        <td class="jd-descrcol" width="100%"></td>
+    </tr>
+    
+    
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+<table id="inhfields" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Fields</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-fields-android.support.v4.widget.CursorAdapter" class="jd-expando-trigger closed"
+          ><img id="inherited-fields-android.support.v4.widget.CursorAdapter-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>From class
+android.support.v4.widget.CursorAdapter
+<div id="inherited-fields-android.support.v4.widget.CursorAdapter">
+  <div id="inherited-fields-android.support.v4.widget.CursorAdapter-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-fields-android.support.v4.widget.CursorAdapter-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+    
+      <tr class="alt-color api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          protected
+          
+          
+          boolean</nobr></td>
+          <td class="jd-linkcol">mAutoRequery</td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          protected
+          
+          
+          CursorAdapter.ChangeObserver</nobr></td>
+          <td class="jd-linkcol">mChangeObserver</td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          protected
+          
+          
+          <a href="http://d.android.com/reference/android/content/Context.html">Context</a></nobr></td>
+          <td class="jd-linkcol">mContext</td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          protected
+          
+          
+          <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a></nobr></td>
+          <td class="jd-linkcol">mCursor</td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          protected
+          
+          
+          CursorFilter</nobr></td>
+          <td class="jd-linkcol">mCursorFilter</td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          protected
+          
+          
+          <a href="http://d.android.com/reference/android/database/DataSetObserver.html">DataSetObserver</a></nobr></td>
+          <td class="jd-linkcol">mDataSetObserver</td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          protected
+          
+          
+          boolean</nobr></td>
+          <td class="jd-linkcol">mDataValid</td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          protected
+          
+          
+          <a href="http://d.android.com/reference/android/widget/FilterQueryProvider.html">FilterQueryProvider</a></nobr></td>
+          <td class="jd-linkcol">mFilterQueryProvider</td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-" >
+          <td class="jd-typecol"><nobr>
+          protected
+          
+          
+          int</nobr></td>
+          <td class="jd-linkcol">mRowIDColumn</td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#DragSortCursorAdapter(android.content.Context, android.database.Cursor)">DragSortCursorAdapter</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> c)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#DragSortCursorAdapter(android.content.Context, android.database.Cursor, boolean)">DragSortCursorAdapter</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> c, boolean autoRequery)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#DragSortCursorAdapter(android.content.Context, android.database.Cursor, int)">DragSortCursorAdapter</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> c, int flags)</nobr>
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#changeCursor(android.database.Cursor)">changeCursor</a></span>(<a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> cursor)</nobr>
+        
+        <div class="jd-descrdiv">Changes Cursor and clears list-Cursor mapping.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#drag(int, int)">drag</a></span>(int from, int to)</nobr>
+        
+        <div class="jd-descrdiv">Does nothing.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#drop(int, int)">drop</a></span>(int from, int to)</nobr>
+        
+        <div class="jd-descrdiv">On drop, this updates the mapping between Cursor positions
+ and ListView positions.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#getCount()">getCount</a></span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#getCursorPosition(int)">getCursorPosition</a></span>(int position)</nobr>
+        
+        <div class="jd-descrdiv">Get the Cursor position mapped to by the provided list position
+ (given all previously handled drag-sort
+ operations).</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/util/ArrayList.html">ArrayList</a>&lt;<a href="http://d.android.com/reference/java/lang/Integer.html">Integer</a>&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#getCursorPositions()">getCursorPositions</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get the current order of Cursor positions presented by the
+ list.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/view/View.html">View</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#getDropDownView(int, android.view.View, android.view.ViewGroup)">getDropDownView</a></span>(int position, <a href="http://d.android.com/reference/android/view/View.html">View</a> convertView, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> parent)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#getItem(int)">getItem</a></span>(int position)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            long</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#getItemId(int)">getItemId</a></span>(int position)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#getListPosition(int)">getListPosition</a></span>(int cursorPosition)</nobr>
+        
+        <div class="jd-descrdiv">Get the list position mapped to by the provided Cursor position.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/view/View.html">View</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#getView(int, android.view.View, android.view.ViewGroup)">getView</a></span>(int position, <a href="http://d.android.com/reference/android/view/View.html">View</a> convertView, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> parent)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#remove(int)">remove</a></span>(int which)</nobr>
+        
+        <div class="jd-descrdiv">On remove, this updates the mapping between Cursor positions
+ and ListView positions.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#reset()">reset</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Resets list-cursor mapping.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#swapCursor(android.database.Cursor)">swapCursor</a></span>(<a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> newCursor)</nobr>
+        
+        <div class="jd-descrdiv">Swaps Cursor and clears list-Cursor mapping.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.support.v4.widget.CursorAdapter" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.support.v4.widget.CursorAdapter-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  android.support.v4.widget.CursorAdapter
+
+<div id="inherited-methods-android.support.v4.widget.CursorAdapter">
+  <div id="inherited-methods-android.support.v4.widget.CursorAdapter-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.support.v4.widget.CursorAdapter-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">bindView</span>(<a href="http://d.android.com/reference/android/view/View.html">View</a> arg0, <a href="http://d.android.com/reference/android/content/Context.html">Context</a> arg1, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">changeCursor</span>(<a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/CharSequence.html">CharSequence</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">convertToString</span>(<a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getCount</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getCursor</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/view/View.html">View</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getDropDownView</span>(int arg0, <a href="http://d.android.com/reference/android/view/View.html">View</a> arg1, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/widget/Filter.html">Filter</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getFilter</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/widget/FilterQueryProvider.html">FilterQueryProvider</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getFilterQueryProvider</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getItem</span>(int arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            long</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getItemId</span>(int arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/view/View.html">View</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getView</span>(int arg0, <a href="http://d.android.com/reference/android/view/View.html">View</a> arg1, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hasStableIds</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">init</span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> arg0, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> arg1, boolean arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/view/View.html">View</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">newDropDownView</span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> arg0, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> arg1, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/view/View.html">View</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">newView</span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> arg0, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> arg1, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">onContentChanged</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">runQueryOnBackgroundThread</span>(<a href="http://d.android.com/reference/java/lang/CharSequence.html">CharSequence</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">setFilterQueryProvider</span>(<a href="http://d.android.com/reference/android/widget/FilterQueryProvider.html">FilterQueryProvider</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">swapCursor</span>(<a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.widget.BaseAdapter" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.widget.BaseAdapter-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://d.android.com/reference/android/widget/BaseAdapter.html">android.widget.BaseAdapter</a>
+
+<div id="inherited-methods-android.widget.BaseAdapter">
+  <div id="inherited-methods-android.widget.BaseAdapter-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.widget.BaseAdapter-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">areAllItemsEnabled</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/view/View.html">View</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getDropDownView</span>(int arg0, <a href="http://d.android.com/reference/android/view/View.html">View</a> arg1, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getItemViewType</span>(int arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getViewTypeCount</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hasStableIds</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">isEmpty</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">isEnabled</span>(int arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyDataSetChanged</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyDataSetInvalidated</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">registerDataSetObserver</span>(<a href="http://d.android.com/reference/android/database/DataSetObserver.html">DataSetObserver</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">unregisterDataSetObserver</span>(<a href="http://d.android.com/reference/android/database/DataSetObserver.html">DataSetObserver</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(<a href="http://d.android.com/reference/java/lang/Object.html">Object</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Class.html">Class</a>&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.widget.Adapter" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.widget.Adapter-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="http://d.android.com/reference/android/widget/Adapter.html">android.widget.Adapter</a>
+
+<div id="inherited-methods-android.widget.Adapter">
+  <div id="inherited-methods-android.widget.Adapter-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.widget.Adapter-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getCount</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Object.html">Object</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getItem</span>(int arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            long</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getItemId</span>(int arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getItemViewType</span>(int arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/view/View.html">View</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getView</span>(int arg0, <a href="http://d.android.com/reference/android/view/View.html">View</a> arg1, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getViewTypeCount</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hasStableIds</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">isEmpty</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">registerDataSetObserver</span>(<a href="http://d.android.com/reference/android/database/DataSetObserver.html">DataSetObserver</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">unregisterDataSetObserver</span>(<a href="http://d.android.com/reference/android/database/DataSetObserver.html">DataSetObserver</a> arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.widget.Filterable" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.widget.Filterable-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="http://d.android.com/reference/android/widget/Filterable.html">android.widget.Filterable</a>
+
+<div id="inherited-methods-android.widget.Filterable">
+  <div id="inherited-methods-android.widget.Filterable-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.widget.Filterable-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/widget/Filter.html">Filter</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getFilter</span>()</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.widget.ListAdapter" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.widget.ListAdapter-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="http://d.android.com/reference/android/widget/ListAdapter.html">android.widget.ListAdapter</a>
+
+<div id="inherited-methods-android.widget.ListAdapter">
+  <div id="inherited-methods-android.widget.ListAdapter-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.widget.ListAdapter-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">areAllItemsEnabled</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">isEnabled</span>(int arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-android.widget.SpinnerAdapter" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-android.widget.SpinnerAdapter-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="http://d.android.com/reference/android/widget/SpinnerAdapter.html">android.widget.SpinnerAdapter</a>
+
+<div id="inherited-methods-android.widget.SpinnerAdapter">
+  <div id="inherited-methods-android.widget.SpinnerAdapter-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-android.widget.SpinnerAdapter-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/android/view/View.html">View</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getDropDownView</span>(int arg0, <a href="http://d.android.com/reference/android/view/View.html">View</a> arg1, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> arg2)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DragListener" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DragListener-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../com/mobeta/android/dslv/DragSortListView.DragListener.html">com.mobeta.android.dslv.DragSortListView.DragListener</a>
+
+<div id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DragListener">
+  <div id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DragListener-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DragListener-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortListView.DragListener.html#drag(int, int)">drag</a></span>(int from, int to)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DropListener" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DropListener-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../com/mobeta/android/dslv/DragSortListView.DropListener.html">com.mobeta.android.dslv.DragSortListView.DropListener</a>
+
+<div id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DropListener">
+  <div id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DropListener-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.mobeta.android.dslv.DragSortListView.DropListener-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortListView.DropListener.html#drop(int, int)">drop</a></span>(int from, int to)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.mobeta.android.dslv.DragSortListView.RemoveListener" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.mobeta.android.dslv.DragSortListView.RemoveListener-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="../../../../com/mobeta/android/dslv/DragSortListView.RemoveListener.html">com.mobeta.android.dslv.DragSortListView.RemoveListener</a>
+
+<div id="inherited-methods-com.mobeta.android.dslv.DragSortListView.RemoveListener">
+  <div id="inherited-methods-com.mobeta.android.dslv.DragSortListView.RemoveListener-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-com.mobeta.android.dslv.DragSortListView.RemoveListener-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../com/mobeta/android/dslv/DragSortListView.RemoveListener.html#remove(int)">remove</a></span>(int which)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Constants</h2>
+
+
+
+
+<A NAME="REMOVED"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        REMOVED
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                -1
+                (0xffffffff)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<A NAME="DragSortCursorAdapter(android.content.Context, android.database.Cursor)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">DragSortCursorAdapter</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> c)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="DragSortCursorAdapter(android.content.Context, android.database.Cursor, boolean)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">DragSortCursorAdapter</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> c, boolean autoRequery)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="DragSortCursorAdapter(android.content.Context, android.database.Cursor, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">DragSortCursorAdapter</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> c, int flags)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="changeCursor(android.database.Cursor)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">changeCursor</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> cursor)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Changes Cursor and clears list-Cursor mapping.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../null#changeCursor(android.database.Cursor)">changeCursor(android.database.Cursor)</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="drag(int, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">drag</span>
+      <span class="normal">(int from, int to)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Does nothing. Just completes DragSortListener interface.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="drop(int, int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">drop</span>
+      <span class="normal">(int from, int to)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>On drop, this updates the mapping between Cursor positions
+ and ListView positions. The Cursor is unchanged. Retrieve
+ the current mapping with getCursorPositions().</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../com/mobeta/android/dslv/DragSortListView.DropListener.html#drop(int, int)">drop(int, int)</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getCount()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getCount</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getCursorPosition(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getCursorPosition</span>
+      <span class="normal">(int position)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the Cursor position mapped to by the provided list position
+ (given all previously handled drag-sort
+ operations).</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>position</td>
+          <td>List position</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The mapped-to Cursor position
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getCursorPositions()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://d.android.com/reference/java/util/ArrayList.html">ArrayList</a>&lt;<a href="http://d.android.com/reference/java/lang/Integer.html">Integer</a>&gt;
+      </span>
+      <span class="sympad">getCursorPositions</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the current order of Cursor positions presented by the
+ list.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getDropDownView(int, android.view.View, android.view.ViewGroup)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://d.android.com/reference/android/view/View.html">View</a>
+      </span>
+      <span class="sympad">getDropDownView</span>
+      <span class="normal">(int position, <a href="http://d.android.com/reference/android/view/View.html">View</a> convertView, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> parent)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getItem(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://d.android.com/reference/java/lang/Object.html">Object</a>
+      </span>
+      <span class="sympad">getItem</span>
+      <span class="normal">(int position)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getItemId(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        long
+      </span>
+      <span class="sympad">getItemId</span>
+      <span class="normal">(int position)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getListPosition(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getListPosition</span>
+      <span class="normal">(int cursorPosition)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the list position mapped to by the provided Cursor position.
+ If the provided Cursor position has been removed by a drag-sort,
+ this returns <code><a href="../../../../com/mobeta/android/dslv/DragSortCursorAdapter.html#REMOVED">REMOVED</a></code>.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>cursorPosition</td>
+          <td>A Cursor position</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The mapped-to list position or REMOVED
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getView(int, android.view.View, android.view.ViewGroup)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://d.android.com/reference/android/view/View.html">View</a>
+      </span>
+      <span class="sympad">getView</span>
+      <span class="normal">(int position, <a href="http://d.android.com/reference/android/view/View.html">View</a> convertView, <a href="http://d.android.com/reference/android/view/ViewGroup.html">ViewGroup</a> parent)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="remove(int)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">remove</span>
+      <span class="normal">(int which)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>On remove, this updates the mapping between Cursor positions
+ and ListView positions. The Cursor is unchanged. Retrieve
+ the current mapping with getCursorPositions().</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../../com/mobeta/android/dslv/DragSortListView.RemoveListener.html#remove(int)">remove(int)</a></code></li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="reset()"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">reset</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Resets list-cursor mapping.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="swapCursor(android.database.Cursor)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a>
+      </span>
+      <span class="sympad">swapCursor</span>
+      <span class="normal">(<a href="http://d.android.com/reference/android/database/Cursor.html">Cursor</a> newCursor)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Swaps Cursor and clears list-Cursor mapping.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li>android.widget.CursorAdapter#swapCursor(android.database.Cursor)</li>
+      </ul>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize doclava-developer-docs.js */
+</script>
+
+</body>
+</html>
